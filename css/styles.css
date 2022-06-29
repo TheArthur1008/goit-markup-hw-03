@@ -27,6 +27,8 @@ body {
 
 ul {
     list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
 /* logo */
@@ -79,9 +81,8 @@ ul {
     line-height: 1.1;
     letter-spacing: 0.02em;
     text-decoration: none;
-    
-    
 }
+
 .site-contacts .link:hover,
 .site-contacts .link:focus {
     color: var(--accent-color);
@@ -91,6 +92,8 @@ ul {
 
 .hero {
     background-color: var(--background-spaygrey-color);
+    text-align: center;
+
 }
 
 .hero-title {
@@ -98,9 +101,11 @@ ul {
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
-    text-align: center;
+    
     letter-spacing: 0.06em;
     text-transform: uppercase;
+    margin-top: 0;
+    margin-bottom: 30px;
     
 }
 
@@ -131,6 +136,11 @@ ul {
     border: 0;
 }
 
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
 
 /* peculiarities */
 .visual-heading{
@@ -144,6 +154,10 @@ ul {
     clip-path: inset(100%);
     clip: rect(0 0 0 0);
     overflow: hidden;
+
+}
+.section.no-padding {
+    padding-top: 0;
 }
 
 .peculiarities {
@@ -155,22 +169,25 @@ ul {
     font-size: 14px;
     line-height: 1.1;
     text-transform: uppercase;
+    margin-top: 0;
+    margin-bottom: 10px;
 }
 
 .peculiarities-text {
     color: var(--title-text-color);
     line-height: 1.71;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 /* work */
 
-.work {
-
-}
 .section-title {
     font-size: 36px;
     line-height: 1.17;
     text-align: center;
+    margin-top: 0;
+    margin-bottom: 50px;
 }
 
 .work-link {
@@ -181,10 +198,9 @@ ul {
 }
 
 /* team */
-.team {
-    background-color: var(--background-grey-color);
+.section.team {
+    background-color: var(--background-grey-color);  
 }
-
  
 .team-list {
     width: 270px;
@@ -195,12 +211,16 @@ ul {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.19;
+    margin-top: 30px;
+    margin-bottom: 10px;
     
 }
 .team-job {
     color: var(--title-text-color);
     font-size: 16px;
     line-height: 1.19;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 /* footer */
@@ -233,11 +253,12 @@ ul {
     font-size: 26px;
     line-height: 1.19;
     text-decoration: none;
-    
+    margin-bottom: 20px;
 }
 
 .logo-footer .title {
     color: var(--accent-color);
+    
 }
 
 /* styles portfolio */
@@ -261,6 +282,8 @@ ul {
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
+    margin-top: 0;
+    margin-bottom: 4px;
     
     
 }
@@ -268,7 +291,11 @@ ul {
     color: var(--title-text-color);
     font-size: 16px;
     line-height: 1.88;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 .job-link {
     text-decoration: none;
+    margin-top: 0;
+    margin-bottom: 20px;
 }
