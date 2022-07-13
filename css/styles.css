@@ -38,6 +38,12 @@ ul {
     padding-bottom: 94px;
 }
 
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
 
 /* container */
 .container {
@@ -165,7 +171,7 @@ ul {
     
 }
 
-.hero>button {
+.hero-button {
     padding-top: 10px;
     padding-bottom: 10px;
     padding-right: 32px;
@@ -184,19 +190,6 @@ ul {
     
 }
 
-.button.active {
-    color: var(--primary-white-color);
-    background-color: var(--accent-color);
-    
-}
-.button.active,
-.button {
-    display: inline-block;
-    padding: 6px 22px;
-    border-radius: 4px;
-    text-align: center;
-    border: 0;
-}
 
 /* peculiarities */
 .visual-heading{
@@ -277,11 +270,11 @@ ul {
     background-color: var(--background-grey-color);  
 }
 
-.team {
+.team-list {
     display: flex;
 }
  
-.team-list {
+.team-link {
     width: 270px;
 
     background-color: var(--primary-white-color);
@@ -291,15 +284,14 @@ ul {
     text-align: center;
 }
 
-.team-list:not(:last-child) {
+.team-link:not(:last-child) {
     margin-right: 30px;
 }
 
 .team-name {
     padding-top: 30px;
-    padding-bottom: 10px;
     margin-top: 0px;
-    margin-bottom: 0px;
+    margin-bottom: 10px;
 
     color: var(--primary-text-color);
 
@@ -397,6 +389,21 @@ ul {
     margin-right: 8px;
 }
 
+.button.active {
+    color: var(--primary-white-color);
+    background-color: var(--accent-color);
+
+}
+
+.button.active,
+.button {
+    display: inline-block;
+    padding: 6px 22px;
+    border-radius: 4px;
+    text-align: center;
+    border: 0;
+}
+
 .button {
     color: var(--primary-text-color);
 
@@ -446,9 +453,8 @@ ul {
 
 .job-title {
     margin-top: 0;
-    margin-bottom: 0;
+    margin-bottom: 4px;
     padding-top: 20px;
-    padding-bottom: 4px;
     padding-left: 24px;
 
 
